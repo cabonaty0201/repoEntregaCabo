@@ -1,0 +1,26 @@
+*{
+	color: greenyellow;
+	background-color: black;
+	font-family: 'Klee One', cursive;
+
+}
+
+.naveFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+	background-image: linear-gradient(black,#77F13B);
+}
+
+a{
+ 	text-decoration:none; 
+ }
+h2{
+	text-align: center;
+	color: yellow;
+}
+
+footer{
+	text-align: right;
+}

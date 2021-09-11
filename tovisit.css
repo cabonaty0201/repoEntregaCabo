@@ -1,0 +1,77 @@
+.naveFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	background-image: linear-gradient(black,#77F13B);
+}
+h1{animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count:1;
+	text-align: center;
+	box-sizing: border-box;
+}
+@keyframes aparecer{
+ 	0%{
+ 		opacity: 0;
+ 	}
+ 	100%{
+ 		opacity: 1;
+ 	}
+ }
+.cajaGrid{
+	width: 90vw;
+	height: 90vh;
+	margin: auto;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns:repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas:"eat eat eat play play"
+						"eat eat eat play play"
+						"eat eat eat play play"
+					    "visit visit visit travel travel"
+					    "visit visit visit travel travel"
+					    "visit visit visit travel travel";
+}	
+
+.cajaGrid__eat{
+	background-image: url(eat.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-area:eat;
+}
+.cajaGrid__eat:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
+.cajaGrid__play{
+	background-image:url(play.jpeg);
+	background-size: contain;
+	background-position: center;
+	grid-area:play;
+}
+.cajaGrid__play:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
+.cajaGrid__visit{
+	background-image: url(visit.jpg);
+	background-size: contain;
+	background-position: center;
+	grid-area:visit;
+}
+.cajaGrid__visit:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
+.cajaGrid__travel{
+	background-image: url(travel.jpg);
+	background-size: cover;
+	background-position: center;
+	grid-area:travel;
+}
+.cajaGrid__travel:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}

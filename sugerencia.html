@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="s.sugerencia.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+	<title>Sugerencias</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="naveFlex">
+			<a href="index.html"><li>Inicio</li></a>
+			</ul>
+		</nav>
+	</header>
+	<div>
+		<h2>Tu aporte nos interesa, dejanos tu sugerencia!</h2>
+			<form action="">
+				<fieldset>
+				<legend>Ingresa los datos</legend>
+				 <ul>
+					  <li>
+					    <label for="name">Nombre:</label>
+					    <input type="text" id="name" name="user_name">
+					  </li>
+					  <li>
+					    <label for="mail">Correo electrónico:</label>
+					    <input type="email" id="mail" name="user_mail">
+					  </li>
+					   <li>
+					    <label for="date">Fecha de nacimiento:</label>
+					    <input type="date" id="date" name="user_date">
+					  </li>
+					  <li>
+					  	<label for="category">Elegir categoria: </label>
+						<select id="options" name="options">
+ 					 		<option value="series">Series</option>
+  							<option value="peliculas">Peliculas</option>
+  							<option value="anime">Anime</option>
+ 					 		<option value="libros">Libros</option>
+ 					 		<option value="comer">Comer</option>
+ 					 		<option value="recorrer">Recorrer</option>
+ 					 		<option value="jugar">Jugar</option>
+ 					 		<option value="viajar">Viajar</option>
+						</select>
+					  </li>			
+					  <li>
+					    <label for="suggestion">Sugerencia:</label>
+					    <input type="text" id="suggestion" name="user_suggestion">
+					  </li>				
+ 					<input type="submit" value="Enviar"></input>
+ 					<input type="reset" value="Limpiar Formulario">
+				 </ul>
+				</fieldset>
+			</form>
+	</div>
+	<footer>
+		<h6>Derechos reservados, idea original de Naty Cabo</h6>
+	</footer>
+</body>
+</html>

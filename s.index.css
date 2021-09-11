@@ -1,0 +1,84 @@
+*{
+	color: greenyellow;
+	background-color: black;
+	font-family: 'Klee One', cursive;
+
+	}
+
+h1{ animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count:1;
+	text-align: center;
+	text-decoration: underline;
+	box-sizing: border-box;
+}
+@keyframes aparecer{
+ 	0%{
+ 		opacity: 0;
+ 	}
+ 	100%{
+ 		opacity: 1;
+ 	}
+ }
+
+h2{ animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count:1;
+	text-align: center;
+}
+ a{
+ 	text-decoration: none ;
+ }
+
+.naveFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	background-image: linear-gradient(black,#77F13B);
+}
+
+.cajaFlex{
+	background-color: black;
+	display: flex;
+	margin: auto;
+	justify-content:space-around;
+	text-align: center;
+	height: 60vh;
+	width: 70vw;
+
+}
+
+.cajaFlex__ver{
+	background-image: url(towatch.jpg);
+	background-size: cover;
+  	background-position: center;
+  	text-align: center;
+	width: 40%;
+	height: 100%;
+
+}
+
+.cajaFlex__ver:hover {
+	transform: scale(1.1);
+	transition: 1.5s all;
+}
+
+
+.cajaFlex__visit{
+	background-image: url(millenials.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 40%;
+	height: 100%;
+
+}
+.cajaFlex__visit:hover {
+	transform: scale(1.1);
+	transition: 1.5s all;
+
+}
+
+footer{
+	text-align: right;
+}
