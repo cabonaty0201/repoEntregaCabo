@@ -1,0 +1,81 @@
+.naveFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	background-image: linear-gradient(black,#77F13B);
+}
+h1{animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count:1;
+	text-align: center;
+	box-sizing: border-box;
+}
+@keyframes aparecer{
+ 	0%{
+ 		opacity: 0;
+ 	}
+ 	100%{
+ 		opacity: 1;
+ 	}
+ }
+.cajaGrid{
+	width: 90vw;
+	height: 90vh;
+	margin: auto;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns:repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas:"serie serie serie anime anime"
+						"serie serie serie anime anime"
+						"serie serie serie anime anime"
+						"movie movie movie books books"
+						"movie movie movie books books"
+						"movie movie movie books books";
+}	
+
+.cajaGrid__series{
+	background-image: url(series.png);
+	background-size: cover;
+	background-position: center;
+	background-color: black;
+	grid-area: serie;
+}
+.cajaGrid__series:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
+
+.cajaGrid__movies{
+	background-image: url(Pulp.jpg);
+	background-size: contain;
+	background-position: center;
+	grid-area: movie;
+}
+.cajaGrid__movies:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
+
+.cajaGrid__anime{
+	background-image: url(anime.jpg);
+	grid-area: anime ;
+	background-size: cover;
+	background-position: center;
+}
+.cajaGrid__anime:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
+
+.cajaGrid__books{
+	background-image: url(libros.jpeg);
+	grid-area: books ;
+	background-size: cover;
+	background-position: center
+}
+.cajaGrid__books:hover{
+	transform: scale(1.1);
+	transition: 1.2s all;
+}
